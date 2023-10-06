@@ -1,0 +1,738 @@
+* {
+    font-family: 'Gabarito', cursive;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth
+}
+
+:root {
+    --main-padding: 10px 30px;
+    --color-hover: #f34905;
+
+}
+
+ul {
+    list-style: none
+}
+
+a {
+    text-decoration: none;
+}
+
+.main-container {
+    width: 98%;
+    margin: 0 auto;
+}
+
+
+
+/* start nav bar  */
+.nav-bar {
+    background-color: blue;
+    width: 98%;
+    position: fixed;
+    top: 0;
+    padding: var(--main-padding);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    z-index: 99999;
+}
+
+.nav-bar .links {
+    position: relative;
+}
+
+.nav-bar ul {
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    transition: 0.8s;
+}
+
+.nav-bar ul li a {
+    color: #ffffff;
+    text-transform: capitalize;
+    transition: 0.5s;
+
+}
+
+.nav-bar ul li a:hover {
+    text-decoration: underline;
+    color: var(--color-hover)
+}
+
+.nav-bar ul li a:active {
+    color: red
+}
+
+.nav-bar ul li .sign {
+    background-color: var(--color-hover);
+    border-radius: 14px;
+    padding: 7px;
+}
+
+.nav-bar ul li .sign:hover {
+    background-color: transparent;
+    border: 1px solid #ec8e00;
+    color: var(--color-hover);
+    text-decoration: none;
+}
+
+/* end nav bar  */
+/* start container-1  */
+.container-1 {
+    background-image: url(../images/banner-bg.jpg);
+    width: 100%;
+    min-height: 600px;
+    border-bottom-left-radius: 25%;
+    border-bottom-right-radius: 25%;
+    position: relative;
+}
+
+.container-1 .cont-1 {
+    padding: var(--main-padding);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 40px;
+    padding-top: 5em;
+}
+
+.container-1 .cont-1 .left {
+    width: 50%;
+    color: white;
+
+}
+
+.container-1 .cont-1 .left h3 {
+    font-variant: small-caps;
+    margin: 10px 0;
+}
+
+.container-1 .cont-1 .left h1 {
+    text-transform: uppercase;
+    word-spacing: 2px;
+    font-weight: bold;
+    margin: 20px 0;
+    position: relative;
+}
+
+.container-1 .cont-1 .left h1::before {
+    content: "";
+    background-image: url(../images/caption-dec.png);
+    width: 50%;
+    height: 10px;
+    position: absolute;
+    right: 0;
+    bottom: -15px;
+    background-repeat: no-repeat;
+}
+
+.container-1 .cont-1 .left p {
+    text-transform: capitalize;
+    word-spacing: 2px;
+    margin: 45px 0;
+}
+
+.container-1 .cont-1 .left p span {
+    text-transform: uppercase;
+
+}
+
+.container-1 .cont-1 .left form {
+    position: relative;
+    width: 70%
+}
+
+.container-1 .cont-1 .left form input {
+    outline: none;
+    border: none;
+    height: 40px;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.container-1 .cont-1 .left form input[type="search"] {
+    width: 100%;
+}
+
+.container-1 .cont-1 .left form input[type="submit"] {
+    position: absolute;
+    right: 0;
+    color: white;
+    background-color: var(--color-hover);
+}
+
+.container-1 .cont-1 .right {
+    width: 25%;
+    height: 300px;
+    background-image: url(../images/banner-image.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    position: relative;
+}
+
+.container-1 .cont-1 .right div:first-child {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    color: white;
+    font-weight: bold;
+    background-color: #004eff;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.container-1 .cont-1 .right div:nth-child(2) {
+    background-color: var(--color-hover);
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    bottom: -20px;
+    left: -20px;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-1 .cards-cont1 {
+    width: 100%;
+    position: absolute;
+    bottom: -110px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    perspective: 300px;
+    perspective-origin: center bottom;
+}
+
+.container-1 .cards-cont1 .card {
+    background-color: #eee;
+    width: 200px;
+    height: 200px;
+    border-radius: 13px;
+    box-shadow: 0px 0px 15px 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.9s;
+
+
+}
+
+.container-1 .cards-cont1 .card img {
+    background-color: blue;
+    padding: 13px;
+    border-radius: 30%;
+    transition: 0.5s;
+
+}
+
+.container-1 .cards-cont1 .card:hover img {
+    background-color: var(--color-hover);
+}
+
+.container-1 .cards-cont1 .card:hover {
+    transform: translateZ(10px);
+    cursor: pointer
+}
+
+/* end container-1  */
+/* start container-2  */
+.container-2 {
+    margin-top: 10em;
+    padding: var(--main-padding);
+}
+
+.container-2 .trend {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.container-2 .trend h3 {
+    color: var(--color-hover);
+    font-variant: small-caps;
+    margin-bottom: 15px;
+}
+
+.container-2 .trend h1 {
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.container-2 .trend button {
+    outline: none;
+    border: none;
+    color: white;
+    background-color: var(--color-hover);
+    text-transform: capitalize;
+    padding: 8px 20px;
+    border-radius: 13px;
+    transition: 0.5s;
+}
+
+.container-2 .trend button:hover {
+    background-color: transparent;
+    border: 1px solid var(--color-hover);
+    color: var(--color-hover)
+}
+
+.container-2 .games-cont2 {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    perspective: 300px;
+    perspective-origin: center bottom;
+}
+
+.container-2 .games-cont2 .game {
+    background-color: #d1d1d1;
+    border-radius: 12px;
+    width: 200px;
+    transition: 0.5s;
+    box-shadow: 0px 0px 10px 2px;
+}
+
+.container-2 .games-cont2 .game:hover {
+    transform: translateZ(15px);
+    box-shadow: 0px 0px 15px 3px;
+}
+
+.container-2 .games-cont2 .game .img-game {
+    position: relative;
+    border-radius: 12px;
+}
+
+.container-2 .games-cont2 .game .img-game {
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 200px
+}
+
+.container-2 .games-cont2 .game .img1 {
+    background-image: url(../images/trending-01.jpg);
+
+}
+
+.container-2 .games-cont2 .game .img2 {
+    background-image: url(../images/trending-02.jpg);
+
+}
+
+.container-2 .games-cont2 .game .img3 {
+    background-image: url(../images/trending-03.jpg);
+}
+
+.container-2 .games-cont2 .game .img4 {
+    background-image: url(../images/trending-04.jpg);
+}
+
+.container-2 .games-cont2 .game .img-game .over-span {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    color: white;
+    padding: 10px;
+    background-color: blue;
+    border-radius: 10px;
+}
+
+.container-2 .games-cont2 .game .img-game .over-span span {
+    display: block;
+}
+
+.container-2 .games-cont2 .over .over-span span:first-child {
+    text-decoration: line-through
+}
+
+.container-2 .games-cont2 .game .des {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container-2 .games-cont2 .game .des .text-des {
+    text-transform: capitalize;
+}
+
+.container-2 .games-cont2 .game .des .text-des p {
+    color: #2e2e2e;
+}
+
+.container-2 .games-cont2 .game .des .text-des h2 {
+    font-size: 22px
+}
+
+.container-2 .games-cont2 .game .des i {
+    background-color: var(--color-hover);
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+
+.container-2 .games-cont2 .game .des i:hover {
+    background-color: blue;
+}
+
+
+/* end container-2  */
+/* start container-3  */
+.container-3 {
+    background-color: #d3d3d3;
+    min-height: 30em;
+    border-radius: 6em;
+    padding: 70px;
+}
+
+.container-3 .top-games {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.container-3 .top-games .text {
+    text-transform: capitalize;
+}
+
+.container-3 .top-games .text h3 {
+    color: var(--color-hover)
+}
+
+.container-3 .top-games button {
+    outline: none;
+    border: none;
+    color: white;
+    background-color: var(--color-hover);
+    text-transform: capitalize;
+    padding: 8px 20px;
+    border-radius: 13px;
+    transition: 0.5s;
+}
+
+.container-3 .top-games button:hover {
+    background-color: transparent;
+    border: 1px solid var(--color-hover);
+    color: var(--color-hover)
+}
+
+.container-3 .games-cont3 {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 160px);
+    gap: 30px;
+    justify-content: center
+}
+
+.container-3 .games-cont3 .part {
+    background-color: #fff;
+    border-radius: 20px;
+    text-align: center;
+    position: relative;
+    height: 160px;
+    transition: 0.5s;
+
+}
+.container-3 .games-cont3 .part img {
+    width: 100%;
+    border-radius: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    transition: 0.7s;
+
+}
+.container-3 .games-cont3 .part img:hover {
+    transform: translateY(-70px);
+    z-index: 1000;
+}
+
+.container-3 .games-cont3 .part .text {
+    text-transform: capitalize;
+    transition: all 0.3s;
+    position: absolute;
+    bottom: 0px;
+    left: 15%;
+}
+
+.container-3 .games-cont3 .part .text p {
+    color: #a2a2a2;
+}
+
+.container-3 .games-cont3 .part .text h3 {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.container-3 .games-cont3 .part button {
+    outline: none;
+    border: none;
+    color: white;
+    background-color: var(--color-hover);
+    text-transform: capitalize;
+    padding: 8px 20px;
+    border-radius: 13px;
+    transition: 0.5s;
+    position: absolute;
+    bottom: -17px;
+    right: 50%;
+    transform: translatex(45px);
+    z-index: 7;
+}
+
+.container-3 .games-cont3 .part button:hover {
+    background-color: transparent;
+    border: 1px solid var(--color-hover);
+    color: var(--color-hover)
+}
+
+
+/* end container-3  */
+
+
+/* start container-4  */
+.container-4 {
+    padding: 30px;
+    min-height: 35em;
+
+}
+
+.container-4 .text-cont4 {
+    text-align: center;
+    text-transform: capitalize;
+    margin: 10px 0;
+}
+
+.container-4 .text-cont4 p {
+    color: var(--color-hover);
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.container-4 .categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 220px);
+    justify-content: center;
+    gap: 25px;
+    margin-top: 100px;
+
+}
+
+.container-4 .categories .cate {
+    text-align: center;
+    border-radius: 20px;
+    background-color: #320ae4;
+    height: 205px;
+    position: relative;
+    transition: 0.5s
+}
+
+/* .container-4 .categories .cate:hover {
+    height: 260px
+} */
+
+.container-4 .categories .cate h3 {
+    text-transform: capitalize;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-top: 22px;
+}
+
+.container-4 .categories .cate i {
+    color: var(--color-hover);
+    font-size: xx-large;
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-12px);
+    z-index: 1;
+    animation: icon-cate 0.4s ease-in-out infinite alternate;
+}
+
+@keyframes icon-cate {
+    to {
+        top: -10px;
+        color: #004eff
+    }
+}
+
+.container-4 .categories .cate i:hover {
+    animation-play-state: paused;
+}
+
+.container-4 .categories .cate img {
+    width: 100%;
+    border-radius: 20px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: 0.8s;
+
+}
+.container-4 .categories .cate img:hover{
+    transform:translateY(55px);
+    z-index: 10;
+}
+
+
+
+/* end container-4  */
+/* start container-5  */
+.container-5 {
+    padding: 20px;
+    position: relative;
+    text-align: center;
+    height: 38em;
+}
+.container-5 .cont5{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+    bottom: 17em;
+    gap: 16em;
+}
+.container-5 img {
+    border-radius: 20px;
+    width: 26em;
+}
+
+.container-5 .left,
+.right {
+    background-color: #c1c1c1;
+    width: 20em;
+    padding: 35px;
+    border-radius: 20px;
+    text-align: left;
+}
+
+.container-5 .p-left-right-cont5 {
+    text-transform: capitalize;
+    color: var(--color-hover);
+    font-weight: bold;
+    margin-bottom: 35px;
+}
+
+.container-5 .h2-left-right-cont5 {
+    text-transform: capitalize;
+    font-size: 28px;
+    margin-bottom: 35px;
+    word-spacing: 4px;
+}
+
+.container-5 .h2-left-right-cont5 span {
+    color: blue
+}
+
+
+.container-5 .left {
+    /* position: absolute;
+    top: 100px;
+    left: 220px;
+    min-height: 23em; */
+}
+
+.container-5 .left .lorem {
+    font-weight: bold;
+    text-transform: capitalize;
+    word-spacing: 2px;
+    margin-bottom: 70px;
+}
+
+.container-5 .left button {
+    outline: none;
+    border: none;
+    color: white;
+    background-color: var(--color-hover);
+    text-transform: capitalize;
+    padding: 8px 20px;
+    border-radius: 13px;
+    transition: 0.5s;
+}
+
+.container-5 .left button:hover {
+    background-color: transparent;
+    border: 1px solid var(--color-hover);
+    color: var(--color-hover)
+}
+
+.container-5 .right {
+    /* position: absolute;
+    top: 165px;
+    right: 240px;
+    height: 20em; */
+
+}
+
+.container-5 .right form {
+    position: relative
+}
+
+.container-5 .right form input {
+    border: none;
+    outline: none;
+    height: 50px;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+.container-5 .right form input[type="email"] {
+
+    width: 200px;
+
+}
+
+.container-5 .right form input[type="submit"] {
+    background-color: var(--color-hover);
+    position: absolute;
+    right: 0px;
+    width: 120px;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: white;
+    transition: 0.5s
+}
+
+/* end container-5  */
+/* start footer  */
+footer {
+    background-image: url(../images/footer-bg.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 120px;
+    margin-top: 50px;
+    text-align: center;
+    padding: 30px 0;
+    border-top-right-radius: 100px; 
+    border-top-left-radius: 100px;
+    color: white;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+footer p span {
+    text-transform: uppercase;
+}
+
+/* end footer  */

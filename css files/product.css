@@ -1,0 +1,377 @@
+* {
+    font-family: 'Gabarito', cursive;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth
+}
+
+:root {
+    --main-padding: 10px 30px;
+    --color-hover: #f34905;
+
+}
+
+ul {
+    list-style: none
+}
+
+a {
+    text-decoration: none;
+}
+
+.main-container {
+    width: 98%;
+    margin: 0 auto;
+}
+
+/* start nav bar  */
+.nav-bar {
+    background-color: blue;
+    width: 98%;
+    position: fixed;
+    top: 0;
+    padding: var(--main-padding);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    z-index: 99999;
+}
+
+.nav-bar .links {
+    position: relative;
+}
+
+.nav-bar ul {
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    transition: 0.8s;
+}
+
+.nav-bar ul li a {
+    color: #ffffff;
+    text-transform: capitalize;
+    transition: 0.5s;
+
+}
+
+.nav-bar ul li a:hover {
+    text-decoration: underline;
+    color: var(--color-hover)
+}
+
+.nav-bar ul li a:active {
+    color: red
+}
+
+.nav-bar ul li .sign {
+    background-color: var(--color-hover);
+    border-radius: 14px;
+    padding: 7px;
+}
+
+.nav-bar ul li .sign:hover {
+    background-color: transparent;
+    border: 1px solid #ec8e00;
+    color: var(--color-hover);
+    text-decoration: none;
+}
+
+/* end nav bar  */
+/* start container-1  */
+.container-1 {
+    background-image: url(../images/page-heading-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    min-height: 30em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-bottom-left-radius: 10em;
+    border-bottom-right-radius: 10em;
+}
+
+.container-1 h1,
+p {
+    color: white;
+}
+
+.container-1 h1 {
+    text-transform: uppercase;
+    font-size: 45px;
+    margin-bottom: 15px
+}
+
+.container-1 p {
+    text-transform: capitalize;
+}
+
+/* end container-1  */
+/* start container-2  */
+.container-2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-2 .left {
+    width: 40%;
+}
+
+.container-2 .right {
+    width: 50%;
+    color: black
+}
+
+.container-2 .right p {
+    color: black
+}
+
+.container-2 .right h2 {
+    text-transform: capitalize;
+    font-weight: bolder;
+}
+
+.container-2 .right h2:first-child span {
+    text-transform: uppercase;
+}
+
+.container-2 .right h2:nth-child(2) {
+    color: blue
+}
+
+.container-2 .right h2:nth-child(2) span {
+    text-decoration: line-through;
+    font-size: 16px;
+    margin-right: 10px;
+    color: #737373;
+}
+
+.container-2 .right p:first-of-type {
+    margin-top: 40px;
+    text-transform: capitalize;
+    width: 85%;
+}
+
+.container-2 .right p:not {
+    text-transform: capitalize;
+}
+
+.container-2 .right .shoping {
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.container-2 .right .shoping .number span {
+    background-color: #dbdbdb;
+    padding: 12px 28px;
+    border-radius: 20px;
+    border: 1px solid #919191;
+    display: block;
+    text-align: center;
+}
+
+.container-2 .right .shoping .number p {
+    color: #717171;
+    text-transform: capitalize;
+}
+
+.container-2 .right .shoping .number .p-shoping-margin {
+    margin-bottom: 10px;
+}
+
+.container-2 .right .shoping .cart button {
+    outline: none;
+    border: none;
+    background-color: var(--color-hover);
+    color: white;
+    padding: 12px 28px;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.container-2 .right .shoping .cart button:hover {
+    background-color: transparent;
+    border: 1px solid var(--color-hover);
+    color: var(--color-hover)
+}
+
+.container-2 .right .shoping .cart .p-shoping-margin {
+    margin-bottom: 10px;
+}
+
+.container-2 .right .shoping .cart p {
+    color: blue;
+    text-transform: capitalize;
+
+}
+
+.container-2 .right .shoping .cart p:first-of-type {
+    text-transform: uppercase;
+}
+
+
+
+/* end container-2  */
+/* start container-3  */
+.container-3 {
+    background-color: lightgrey;
+    width: 95%;
+    margin: 3em auto 0 auto;
+    padding: 40px;
+    border-radius: 15px;
+}
+
+.container-3 h2 {
+    display: inline-block;
+}
+
+.container-3 h2:first-child {
+    padding-right: 25px;
+    border-right: 1px solid;
+    margin-right: 20px;
+}
+
+.container-3 p {
+    color: black;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.container-3 p:first-of-type {
+    margin: 40px 0;
+}
+
+/* end container-3  */
+/* start container-4  */
+.container-4 {
+   margin: 30px auto 0 auto;
+    width: 95%
+}
+
+.container-4 .related {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.container-4 .related .text {
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.container-4 .related .text p {
+    color: var(--color-hover);
+    margin-bottom: 15px;
+}
+
+.container-4 .related button {
+    outline: none;
+    border: none;
+    background-color: var(--color-hover);
+    color: white;
+    text-transform: capitalize;
+    padding: 10px 25px;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.container-4 .related button:hover {
+    background-color: transparent;
+    color: var(--color-hover);
+    border: 1px solid var(--color-hover);
+}
+
+.container-4 .games {
+    margin-top: 3em;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 220px);
+    justify-content: center;
+    gap: 25px;
+}
+
+.container-4 .games .part {
+    position: relative;
+    background-color: blue;
+    border-radius: 35px;
+    text-align: center;
+    height: 205px;
+
+
+}
+
+.container-4 .games .part img {
+    width: 100%;
+    border-radius: 35px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.7s;
+
+}
+
+.container-4 .games .part img:hover {
+    transform: translateY(45px);
+    z-index: 10;
+}
+
+
+.container-4 .games .part i {
+    position: absolute;
+    top: -16px;
+    font-size: 30px;
+    left: 44%;
+    z-index: 7;
+    animation: part 0.5s ease-in-out alternate infinite;
+
+}
+
+@keyframes part {
+    from {
+        color: var(--color-hover)
+    }
+
+    to {
+        color: blue;
+        transform: translateY(-10px)
+    }
+}
+
+.container-4 .games .part h3 {
+    color: white;
+    text-transform: capitalize;
+    padding: 10px 0;
+}
+
+/* end container-4  */
+/* start footer  */
+footer {
+    background-image: url(../images/footer-bg.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 120px;
+    margin-top: 50px;
+    text-align: center;
+    padding: 30px 0;
+    border-top-right-radius: 100px;
+    border-top-left-radius: 100px;
+    color: white;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+footer p span {
+    text-transform: uppercase;
+}
+
+/* end footer  */

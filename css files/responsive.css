@@ -1,0 +1,530 @@
+@media screen and (max-width:425px) {
+
+    /* start nav bar  */
+    .nav-bar {
+        width: 98%;
+        position: fixed;
+        padding: var(--main-padding);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav-bar a .logo {
+        width: 50%
+    }
+
+    .nav-bar .links {
+        position: relative;
+    }
+
+    .nav-bar .links .icons {
+        width: 30px;
+        height: 20px;
+    }
+
+    .nav-bar .links .icons div {
+        background-color: white;
+        transition: 0.5s;
+        height: 3px;
+        margin: 4px 0
+    }
+
+    .nav-bar .links .icons div:first-child {
+        width: 92%;
+    }
+
+    .nav-bar .links .icons div:nth-child(2) {
+        width: 100%;
+    }
+
+    .nav-bar .links .icons div:nth-child(3) {
+        width: 92%;
+    }
+
+    .nav-bar .links .icons:hover div:first-child {
+        transform: rotate(45deg) translatex(9px);
+    }
+
+    .nav-bar .links .icons:hover div:nth-child(3) {
+        transform: rotate(120deg) translatex(-9px);
+    }
+
+    .nav-bar .links .icons:hover div:nth-child(2) {
+        transition-delay: 0.2s;
+        width: 0;
+    }
+
+    .nav-bar ul {
+        position: absolute;
+        right: 0;
+        background-color: #eee;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        top: 25px;
+        height: 20px;
+        width: 225px;
+        overflow: hidden;
+        transition: 0.8s;
+        border-radius: 10px;
+        display: none;
+        transition: 0.5s;
+        z-index: 999;
+    }
+
+    .nav-bar .links:hover ul {
+        display: flex;
+
+    }
+
+    .nav-bar ul:hover {
+        width: 225px;
+        height: 300px;
+    }
+
+    .nav-bar ul li a {
+        color: black;
+        text-transform: capitalize;
+        transition: 0.5s
+    }
+
+    .nav-bar ul li a:hover {
+        text-decoration: underline;
+    }
+
+    /* end nav bar  */
+    /* start container-1  */
+    .container-1 {
+        min-height: 800px;
+    }
+
+    .container-1 .cont-1 {
+        flex-direction: column;
+        margin-top: 0px;
+    }
+
+    .container-1 .cont-1 .left {
+        width: 100%;
+    }
+
+    .container-1 .cont-1 .left h1 {
+        margin: 0;
+    }
+
+    .container-1 .cont-1 .left p {
+        text-transform: capitalize;
+        word-spacing: 2px;
+        margin: 35px 0;
+    }
+
+    .container-1 .cont-1 .left form {
+        position: relative;
+        width: 100%;
+    }
+
+    .container-1 .cont-1 .right {
+        width: 100%;
+        margin-top: 10px;
+        height: 292px
+    }
+
+    .container-1 .cards-cont1 {
+        top: 48em;
+    }
+
+    /* end container-1  */
+    /* start container-2  */
+    .container-2 {
+        margin-top: 55em;
+    }
+
+    .container-2 .trend {
+        flex-direction: column;
+        gap: 22px;
+        text-align: center;
+        align-items: unset;
+    }
+
+    /* end container-2  */
+    /* start container-3  */
+    .container-3 {
+        border-radius: 45px;
+        padding: 20px;
+        min-height: 120em;
+    }
+
+    .container-3 .top-games {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .container-3 .games-cont3 .part .text {
+        left: 24%;
+    }
+
+    .container-3 .games-cont3 {
+        margin-top: 50px;
+        justify-content: center;
+        grid-template-columns: repeat(1, 220px);
+        gap: 55px;
+    }
+
+    .container-3 .games-cont3 .part {
+        height: 220px;
+    }
+
+    /* end container-3  */
+    /* start container-5  */
+    .container-5 {
+        height: 50em;
+    }
+
+    .container-5 .cont5 {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        position: relative;
+        bottom: 0em;
+        gap: 2em;
+        flex-direction: column;
+    }
+
+    .container-5 img {
+        display: none;
+    }
+
+    .container-5 .left,
+    .right {
+        width: 100%;
+        padding: 25px;
+        border-radius: 20px;
+    }
+
+    .container-5 .left {
+        position: unset;
+        min-height: unset;
+        margin-bottom: 30px;
+    }
+
+    .container-5 .right {
+        position: unset;
+        height: unset;
+    }
+
+    .container-5 .right form {
+        max-width: 250px;
+    }
+
+    .container-5 .right form input[type="email"] {
+        width: 180px;
+    }
+
+    .container-5 .right form input[type="submit"] {
+        width: 110px;
+    }
+
+    /* end container-5  */
+
+
+}
+
+@media screen and (min-width: 426px) and (max-width: 767px) {
+
+    /* start nav bar  */
+    .nav-bar {
+        width: 98%;
+        position: fixed;
+        padding: var(--main-padding);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav-bar .links {
+        position: relative;
+    }
+
+    .nav-bar .links .icons {
+        width: 30px;
+        height: 20px;
+    }
+
+    .nav-bar .links .icons div {
+        background-color: white;
+        transition: 0.5s;
+        height: 3px;
+        margin: 4px 0
+    }
+
+    .nav-bar .links .icons div:first-child {
+        width: 92%;
+    }
+
+    .nav-bar .links .icons div:nth-child(2) {
+        width: 100%;
+    }
+
+    .nav-bar .links .icons div:nth-child(3) {
+        width: 92%;
+    }
+
+    .nav-bar .links .icons:hover div:first-child {
+        transform: rotate(45deg) translatex(9px);
+    }
+
+    .nav-bar .links .icons:hover div:nth-child(3) {
+        transform: rotate(120deg) translatex(-9px);
+    }
+
+    .nav-bar .links .icons:hover div:nth-child(2) {
+        transition-delay: 0.2s;
+        width: 0;
+    }
+
+    .nav-bar ul {
+        position: absolute;
+        right: 0;
+        background-color: #eee;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        top: 25px;
+        height: 20px;
+        width: 290px;
+        overflow: hidden;
+        transition: 0.8s;
+        border-radius: 10px;
+        display: none;
+        transition: 0.5s;
+        z-index: 999;
+    }
+
+    .nav-bar .links:hover ul {
+        display: flex;
+
+    }
+
+    .nav-bar ul:hover {
+        width: 290px;
+        height: 300px;
+    }
+
+    .nav-bar ul li a {
+        color: black;
+        text-transform: capitalize;
+        transition: 0.5s
+    }
+
+    .nav-bar ul li a:hover {
+        text-decoration: underline;
+    }
+
+    /* end nav bar  */
+    /* start container-1  */
+    .container-1 {
+        min-height: 800px;
+    }
+
+    .container-1 .cont-1 {
+        flex-direction: column;
+        margin-top: 0px;
+    }
+
+    .container-1 .cont-1 .left {
+        width: 100%;
+    }
+
+    .container-1 .cont-1 .left h1 {
+        margin: 0;
+    }
+
+    .container-1 .cont-1 .left p {
+        text-transform: capitalize;
+        word-spacing: 2px;
+        margin: 35px 0;
+    }
+
+    .container-1 .cont-1 .left form {
+        position: relative;
+        width: 100%;
+    }
+
+    .container-1 .cont-1 .right {
+        width: 100%;
+        margin-top: 10px;
+        height: 600px;
+        background-position: top;
+    }
+
+    .container-1 .cards-cont1 {
+        top: 62em
+    }
+
+    /* end container-1  */
+    /* start container-2  */
+    .container-2 {
+        margin-top: 30em;
+    }
+
+    /* end container-2  */
+    /* start container-3  */
+    .container-3 {
+        min-height: 2250px;
+    }
+
+    .container-3 .games-cont3 {
+        gap: 3em;
+        grid-template-columns: repeat(auto-fill, 270px);
+        justify-content: center;
+    }
+
+    .container-3 .games-cont3 .part {
+        height: 270px;
+    }
+
+    .container-3 .games-cont3 .part .text {
+        left: 30%;
+    }
+
+
+
+    /* end container-3  */
+    /* start container-5  */
+    .container-5 {
+        height: 43em;
+    }
+
+    .container-5 .cont5 {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        position: relative;
+        bottom: 0em;
+        gap: 2em;
+        flex-direction: column;
+    }
+
+    .container-5 img {
+        display: none;
+    }
+
+    .container-5 .left,
+    .right {
+        width: 100%;
+        padding: 25px;
+        border-radius: 20px;
+    }
+
+    .container-5 .left {
+        position: unset;
+        min-height: unset;
+        margin-bottom: 30px;
+    }
+
+    .container-5 .right {
+        position: unset;
+        height: unset;
+    }
+
+    .container-5 .right form {
+        max-width: 390px;
+    }
+
+    .container-5 .right form input[type="email"] {
+        width: 84%;
+    }
+
+    .container-5 .right form input[type="submit"] {
+        width: 110px;
+    }
+
+    /* end container-5  */
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+    /* start container-1  */
+    .container-1 .cards-cont1 {
+        top: 33em;
+    }
+
+    .container-1 .cont-1 .right {
+        width: 33%;
+        height: 330px;
+    }
+
+    /* end container-1  */
+    /* start container-2  */
+    .container-2 {
+        margin-top: 25em;
+    }
+
+    /* end container-2  */
+    /* start container-3  */
+    .container-3 {
+        min-height: 50em
+    }
+
+    .container-3 .games-cont3 {
+        gap: 80px;
+        margin-top: 130px;
+    }
+
+    .container-3 .games-cont3 .part .text {
+        left: 15%;
+    }
+
+    /* end container-3  */
+    /* start container-5  */
+    .container-5 .cont5 {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        position: relative;
+        bottom: 17em;
+        gap: 11em;
+    }
+
+    .container-5 img {
+        border-radius: 20px;
+        width: 28em;
+    }
+
+    .container-5 .left {
+        /* top: 90px;
+        left: 35px;
+        min-height: 23em; */
+    }
+
+    .container-5 .left,
+    .right {
+        width: 17em;
+        padding: 25px;
+    }
+
+    .container-5 .right {
+        /* right: 15px; */
+    }
+
+    /* end container-5  */
+}
+
+@media screen and (min-width: 992px) and (max-width: 1439px) {
+
+    /* start container-3  */
+    .container-3 {
+        min-height: 35em
+    }
+
+    .container-3 .games-cont3 {
+        margin-top: 130px;
+    }
+
+    /* end container-3  */
+
+}

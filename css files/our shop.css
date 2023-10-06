@@ -1,0 +1,271 @@
+* {
+    font-family: 'Gabarito', cursive;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth
+}
+
+:root {
+    --main-padding: 10px 30px;
+    --color-hover: #f34905;
+
+}
+
+ul {
+    list-style: none
+}
+
+a {
+    text-decoration: none;
+}
+
+.main-container {
+    width: 98%;
+    margin: 0 auto;
+}
+
+/* start nav bar  */
+.nav-bar {
+    background-color: blue;
+    width: 98%;
+    position: fixed;
+    top: 0;
+    padding: var(--main-padding);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    z-index: 99999;
+}
+
+.nav-bar .links {
+    position: relative;
+}
+
+.nav-bar ul {
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    transition: 0.8s;
+}
+
+.nav-bar ul li a {
+    color: #ffffff;
+    text-transform: capitalize;
+    transition: 0.5s;
+
+}
+
+.nav-bar ul li a:hover {
+    text-decoration: underline;
+    color: var(--color-hover)
+}
+
+.nav-bar ul li a:active {
+    color: red
+}
+
+.nav-bar ul li .sign {
+    background-color: var(--color-hover);
+    border-radius: 14px;
+    padding: 7px;
+}
+
+.nav-bar ul li .sign:hover {
+    background-color: transparent;
+    border: 1px solid #ec8e00;
+    color: var(--color-hover);
+    text-decoration: none;
+}
+
+/* end nav bar  */
+
+/* start container-1  */
+.container-1 {
+    background-position: center;
+    min-height: 25em;
+    border-bottom-left-radius: 10em;
+    border-bottom-right-radius: 10em;
+    background-image: url(../images/page-heading-bg.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-1 .text {
+    text-align: center;
+    color: white
+}
+
+.container-1 .text h1 {
+    font-size: 60px;
+    margin-bottom: 10px;
+    text-transform: uppercase
+}
+
+.container-1 .text p {
+    text-transform: capitalize
+}
+
+
+/* end container-1  */
+/* start container-2  */
+.container-2{
+    margin-top: 5em;
+}
+.container-2 ul{
+    display: flex;
+    justify-content: center;
+    gap: 5em;
+    flex-wrap: wrap;
+}
+.container-2 ul li a{
+    display: block;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: black;
+    background-color: #ababab;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+.container-2 ul li .active:hover {
+   background-color: var(--color-hover);
+   color:white;
+}
+.container-2 .games{
+    margin-top: 10em;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, 250px);
+    gap: 30px;
+    perspective: 300px;
+    perspective-origin: center bottom;
+}
+.container-2 .games .part{
+    background-color: #a1a1a1;
+    border-radius: 30px;
+    transition: 0.5s;
+    box-shadow: 0px 0px 12px 2px #000000;
+}
+.container-2 .games .part:hover{
+transform:translateZ(10px);
+box-shadow: 0px 0px 15px 3px #000000;
+}
+.container-2 .games .part .img{
+    background-position: center ;
+    background-size: cover;
+    width: 100%;
+    height: 220px;
+    background-repeat: no-repeat;
+    position:relative;
+    border-radius: 30px;
+
+}
+.container-2 .games .part .img .price{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    background-color: blue;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    padding: 2px 15px;
+    border-radius: 10px;
+}
+.container-2 .games .part .img .price span:first-child{
+    text-decoration: line-through;
+}
+.container-2 .games .part-1 .img{
+    background-image: url(../images/categories-01.jpg);
+}
+.container-2 .games .part-2 .img{
+    background-image: url(../images/categories-02.jpg);
+}
+.container-2 .games .part-3 .img{
+    background-image: url(../images/categories-03.jpg);
+}
+.container-2 .games .part-4 .img{
+    background-image: url(../images/categories-04.jpg);
+}
+.container-2 .games .part-5 .img{
+    background-image: url(../images/categories-05.jpg);
+}
+.container-2 .games .part-6 .img{
+    background-image: url(../images/trending-01.jpg);
+}
+.container-2 .games .part-7 .img{
+    background-image: url(../images/trending-02.jpg);
+}
+.container-2 .games .part-8 .img{
+    background-image: url(../images/trending-03.jpg);
+}
+.container-2 .games .part-9 .img{
+    background-image: url(../images/trending-04.jpg);
+}
+.container-2 .games .part-10 .img{
+    background-image: url(../images/categories-04.jpg);
+}
+.container-2 .games .part-11 .img{
+    background-image: url(../images/top-game-01.jpg);
+}
+.container-2 .games .part-12 .img{
+    background-image: url(../images/top-game-02.jpg);
+}
+.container-2 .games .part .ex{
+    padding: 10px 20px;
+}
+.container-2 .games .part .ex .text-part{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.4s
+}
+.container-2 .games .part .ex .text-part:hover{
+    color: blue
+}
+.container-2 .games .part .ex .text-part h2{
+    text-transform: capitalize;
+    color: wh
+}
+.container-2 .games .part .ex .text-part i{
+    color: white;
+    background-color: var(--color-hover);
+    padding: 15px;
+    border-radius: 30px;
+    transition: 0.4s
+}
+.container-2 .games .part .ex .text-part:hover i{
+    background-color: blue;
+}
+/* end container-2  */
+/* start footer  */
+footer {
+    background-image: url(../images/footer-bg.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 120px;
+    margin-top: 50px;
+    text-align: center;
+    padding: 30px 0;
+    border-top-right-radius: 100px; 
+    border-top-left-radius: 100px;
+    color: white;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+footer p span {
+    text-transform: uppercase;
+}
+
+/* end footer  */
